@@ -1,12 +1,15 @@
 package com.it.source;
 
+import java.math.BigDecimal;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        String casualAmountOfMoney = "01.00";
+        String casualAmountOfMoney = "4.9";
         String result = "There are no profit!";
 
+//        System.out.println(new BigDecimal("1").compareTo(new BigDecimal(10)));
         try {
             Controller.checkIncomingData(casualAmountOfMoney);
             result = Controller.calculateIncome(casualAmountOfMoney);
