@@ -4,6 +4,8 @@ public class Constants {
 
     public static final String INCOMING_DATA_PATTERN_STRING = "[0-9]{0,10}[.]{0,1}[0-9]{0,2}";
 
+    public static final int DIGITS_AFTER_POINT = 2;
+
     public enum RatioRangeDependence {
         FIRST_RANGE (0L, 1000L, 1.0),
         SECOND_RANGE(1000L,  10000L, 1.5),
