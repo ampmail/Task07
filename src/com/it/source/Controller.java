@@ -17,16 +17,16 @@ public class Controller {
         return result.toString();
     }
 
-    public static boolean checkIncomingData(String incomingData) throws MyIllegalArgumentException {
+    public static void checkIncomingData(String incomingData) throws MyIllegalArgumentException {
 
         if (incomingData != null && incomingData.length() > 0) {
             String pattern = Constants.INCOMING_DATA_PATTERN_STRING;
             Pattern pat = Pattern.compile(pattern);
             Matcher mat = pat.matcher(incomingData);
-//            return (mat.find()) ? (true) : (false);
-            if(!mat.find()){
-                throw new MyIllegalArgumentException("Mismatch format data");
+            if (!mat.matches()) {
+                throw new MyIllegalArgumentException("Mismatch format data: " + incomingData);
             }
+            return;
         }
         throw new MyIllegalArgumentException("Incoming data was not defined or invalid");
     }

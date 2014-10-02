@@ -6,6 +6,5 @@ public class MyIllegalArgumentException extends Exception{
     }
     MyIllegalArgumentException(String msg){
         System.out.println(msg);
-//        super(msg);
     }
 }
