@@ -2,9 +2,17 @@ package com.it.source;
 
 public class Main {
 
-
     public static void main(String[] args) {
 
-        System.out.println(Constants.RatioRangeDependence.FIRST_RANGE.HiBorder);
+        String casualAmountOfMoney = "";
+
+        try{
+            Controller.checkIncomingData(casualAmountOfMoney);
+        }catch (MyIllegalArgumentException e){
+
+        }
+//        if(Controller.checkIncomingData(casualAmountOfMoney)){
+//            System.out.println(Controller.calculateIncome(casualAmountOfMoney));
+//        }
     }
 }
