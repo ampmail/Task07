@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bff0132d-7dd5-4306-8ac9-443ada23e04a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/it/source/MyArithmeticException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/it/source/Constants.java" afterPath="$PROJECT_DIR$/src/com/it/source/Constants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/it/source/Controller.java" afterPath="$PROJECT_DIR$/src/com/it/source/Controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/it/source/Main.java" afterPath="$PROJECT_DIR$/src/com/it/source/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/it/source/MyIllegalArgumentException.java" afterPath="$PROJECT_DIR$/src/com/it/source/MyIllegalArgumentException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Task7.iws" />
@@ -74,7 +71,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/it/source/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="52" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+            <state line="6" column="40" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
               <folding />
             </state>
           </provider>
@@ -83,7 +80,7 @@
       <file leaf-file-name="Controller.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/it/source/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.4386503" vertical-offset="0" max-vertical-offset="880">
+            <state line="23" column="54" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.5736196" vertical-offset="132" max-vertical-offset="1166">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,10 +131,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/com/it/source/Exceptions.java" />
-        <option value="$PROJECT_DIR$/src/com/it/source/Constants.java" />
         <option value="$PROJECT_DIR$/src/com/it/source/MyIllegalArgumentException.java" />
-        <option value="$PROJECT_DIR$/src/com/it/source/Main.java" />
         <option value="$PROJECT_DIR$/src/com/it/source/MyArithmeticException.java" />
+        <option value="$PROJECT_DIR$/src/com/it/source/Constants.java" />
+        <option value="$PROJECT_DIR$/src/com/it/source/Main.java" />
         <option value="$PROJECT_DIR$/src/com/it/source/Controller.java" />
       </list>
     </option>
@@ -507,7 +504,7 @@
       <updated>1412190512905</updated>
       <workItem from="1412190516105" duration="4254000" />
       <workItem from="1412197378377" duration="293000" />
-      <workItem from="1412273021170" duration="11420000" />
+      <workItem from="1412273021170" duration="13558000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;">
       <created>1412273773667</created>
@@ -521,11 +518,15 @@
       <created>1412282106282</created>
       <updated>1412282106282</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit&#10;">
+      <created>1412285227536</created>
+      <updated>1412285227536</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15967000" />
+    <option name="totallyTimeSpent" value="18105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="154" y="0" width="1763" height="1160" extended-state="0" />
@@ -596,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="13" selection-start="9973" selection-end="9973" vertical-scroll-proportion="0.33333334" vertical-offset="3845" max-vertical-offset="84172">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/it/source/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="8" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
@@ -612,9 +606,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2551" column="15" selection-start="108076" selection-end="108076" vertical-scroll-proportion="0.53034824" vertical-offset="54863" max-vertical-offset="84172">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/it/source/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="52" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+        <state line="6" column="40" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
           <folding />
         </state>
       </provider>
@@ -635,7 +636,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/it/source/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.4386503" vertical-offset="0" max-vertical-offset="880">
+        <state line="23" column="54" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.5736196" vertical-offset="132" max-vertical-offset="1166">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

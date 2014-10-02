@@ -6,11 +6,24 @@ import java.util.regex.Pattern;
 
 public class Controller {
 
-    public static String calculateIncome(String checkedInputData) throws ArithmeticException, MyIllegalArgumentException {
+    public static String calculateIncome(String checkedInputData) throws MyArithmeticException, MyIllegalArgumentException {
         BigDecimal result = null;
+        BigDecimal inputAmount;
         try {
-            result = new BigDecimal(checkedInputData);
-
+            inputAmount = new BigDecimal(checkedInputData);
+            for(Constants.RatioRangeDependence Range: Constants.RatioRangeDependence.values()){
+                if( (inputAmount.compareTo(new BigDecimal(Range.LowBorder)) > 1 &&
+                     inputAmount.compareTo(new BigDecimal(Range.HiBorder)) < 1 ) ||
+                     inputAmount.compareTo(new BigDecimal(Range.LowBorder)) == 0 ){
+                    result = new BigDecimal(Range.getProfit());
+                    break;
+                }
+                if(result != null){
+                    result.add(result.multiply(result.divide(new BigDecimal(100))));
+                }else {
+                    throw new MyArithmeticException();
+                }
+            }
 
         } catch (NumberFormatException e) {
             throw new MyIllegalArgumentException();

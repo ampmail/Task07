@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String casualAmountOfMoney = "012345678.01";
+        String casualAmountOfMoney = "01.00";
         String result = "There are no profit!";
 
         try {
@@ -12,6 +12,8 @@ public class Main {
             result = Controller.calculateIncome(casualAmountOfMoney);
         } catch (MyIllegalArgumentException e) {
             System.out.println("Abnormal program stop");
+        } catch (MyArithmeticException e) {
+            e.printStackTrace();
         } finally {
             System.out.println(result);
         }
