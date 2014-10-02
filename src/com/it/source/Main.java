@@ -4,15 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String casualAmountOfMoney = "012345678s.01";
+        String casualAmountOfMoney = "012345678.01";
+        String result = "There are no profit!";
 
-        try{
+        try {
             Controller.checkIncomingData(casualAmountOfMoney);
-        }catch (MyIllegalArgumentException e){
-
+            result = Controller.calculateIncome(casualAmountOfMoney);
+        } catch (MyIllegalArgumentException e) {
+            System.out.println("Abnormal program stop");
+        } finally {
+            System.out.println(result);
         }
-//        if(Controller.checkIncomingData(casualAmountOfMoney)){
-//            System.out.println(Controller.calculateIncome(casualAmountOfMoney));
-//        }
     }
 }

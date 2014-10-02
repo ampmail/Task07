@@ -6,13 +6,14 @@ import java.util.regex.Pattern;
 
 public class Controller {
 
-    public static String calculateIncome(String checkedInputData) throws ArithmeticException {
+    public static String calculateIncome(String checkedInputData) throws ArithmeticException, MyIllegalArgumentException {
         BigDecimal result = null;
-
         try {
             result = new BigDecimal(checkedInputData);
-        } catch (ArithmeticException e) {
 
+
+        } catch (NumberFormatException e) {
+            throw new MyIllegalArgumentException();
         }
         return result.toString();
     }
@@ -24,10 +25,10 @@ public class Controller {
             Pattern pat = Pattern.compile(pattern);
             Matcher mat = pat.matcher(incomingData);
             if (!mat.matches()) {
-                throw new MyIllegalArgumentException("Mismatch format data: " + incomingData);
+                throw new MyIllegalArgumentException(incomingData);
             }
             return;
         }
-        throw new MyIllegalArgumentException("Incoming data was not defined or invalid");
+        throw new MyIllegalArgumentException("incoming data was not defined or invalid");
     }
 }

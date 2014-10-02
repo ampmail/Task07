@@ -5,6 +5,6 @@ public class MyIllegalArgumentException extends Exception{
         System.out.println("Something going wrong");
     }
     MyIllegalArgumentException(String msg){
-        System.out.println(msg);
+        System.out.println("Mismatch format data: " + msg);
     }
 }
